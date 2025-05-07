@@ -19,11 +19,6 @@ h1, h2, h3 {
     font-family: 'Georgia', serif;
     color: #4a3f35; /* Consistent heading color */
 }
-
-h1:hover, h2:hover, h3:hover {
-    color: #a9746e; /* Same as the hover effect for links */
-    transition: color 0.3s ease;
-}
   
 p {
     font-family: Georgia, serif;
