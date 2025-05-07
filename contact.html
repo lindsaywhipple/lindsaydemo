@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact</title>
+  <title>Contact - Lindsay Whipple</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -22,13 +22,29 @@
   </header>
 
   <main>
-    <h2>Contact</h2>
+    <h2>Contact Me</h2>
+    <p><strong>Location:</strong> Boston, MA</p>
+    <p><strong>Email:</strong> lindsaymwhipple@gmail.com</p>
     <p>
-      Contact Me I need a job!!
+      <strong>LinkedIn:</strong>
+      <a href="https://www.linkedin.com/in/lindsay-whipple-425135160/" target="_blank">
+        linkedin.com/in/lindsay-whipple-425135160
+      </a>
     </p>
-    <p>
-      Contact box?
-    </p>
+
+    <h3>Leave a Comment</h3>
+    <form action="#" method="post">
+      <label for="name">Your Name:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="email">Your Email:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="message">Your Message:</label><br />
+      <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+
+      <button type="submit">Send Message</button>
+    </form>
   </main>
 
   <footer>
