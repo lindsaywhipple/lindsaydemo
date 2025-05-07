@@ -19,6 +19,11 @@ h1, h2, h3 {
     font-family: 'Georgia', serif;
     color: #4a3f35; /* Consistent heading color */
 }
+
+h1:hover, h2:hover, h3:hover {
+    color: #a9746e; /* Same as the hover effect for links */
+    transition: color 0.3s ease;
+}
   
 p {
     font-family: Georgia, serif;
@@ -61,11 +66,9 @@ nav ul {
     padding: 0;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #5a4a42;
-    font-weight: bold;
-    transition: color 0.3s ease;
+nav ul li a:hover {
+    color: #a9746e;
+    text-decoration: underline; /* Adds an underline effect */
 }
   
 nav ul li a:hover {
@@ -124,6 +127,11 @@ button[type="submit"]:hover {
     background-color: #8a5c54;
 }
 
+button:hover {
+    background-color: #a9746e;
+    transition: background-color 0.3s ease;
+}
+
 /* Emoji spacing and hover effect */
 p a {
     text-decoration: none;
@@ -142,4 +150,14 @@ footer {
     background-color: #fef1e6;
     color: #6a4e42;
     margin-top: 2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #6a4e42; /* Keep the footer text color consistent */
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #a9746e;
 }
