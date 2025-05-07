@@ -18,15 +18,9 @@ body {
     border-bottom: 1px solid #e0d7ce;
   }
 
-header h1 {
-    margin: 0;
-    font-size: 28px;
-    color: #3e3e3e;
-  }
-
   .site-title {
     font-family: Georgia, serif;
-    color: white; /* or #fdf6f0 if you want softer than pure white */
+    color: #5a4a42; /* Matches nav links */
     font-size: 2rem;
     margin: 0;
   }
@@ -45,9 +39,6 @@ header h1 {
     color: #5a4a42;
     font-weight: bold;
     transition: color 0.3s ease;
-    .site-title {
-        font-family: Georgia, serif;
-        color: #fdf6f0; /* soft cream tone */
   }
   
   nav ul li a:hover {
