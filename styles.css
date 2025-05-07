@@ -74,6 +74,13 @@ nav ul li a:hover {
     color: #a9746e; /* Soft rose brown */
 }
 
+nav a:visited,
+.site-title a:visited,
+p a:visited {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
 /* Contact Form Styles */
 form {
     max-width: 600px;
