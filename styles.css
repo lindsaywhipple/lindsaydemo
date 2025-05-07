@@ -12,17 +12,17 @@ body {
 main {
     padding: 2rem;
     text-align: center;
-    color: #5a4a42; /* Same color for text consistency */
+    color: #5a4a42;
 }
   
 h1, h2, h3 {
     font-family: 'Georgia', serif;
-    color: #4a3f35; /* Consistent heading color */
+    color: #7a6257; /* Updated lighter but distinct header color */
 }
   
 p {
     font-family: Georgia, serif;
-    color: #5a4a42; /* Same as body text */
+    color: #5a4a42;
 }
 
 /* Header */
@@ -30,27 +30,26 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fef1e6; /* Beige/cream */
+    background-color: #fef1e6;
     padding: 20px 40px;
     border-bottom: 1px solid #e0d7ce;
 }
 
 .site-title {
     font-family: Georgia, serif;
-    color: #5a4a42;
+    color: #7a6257; /* Matches header color */
     font-size: 2rem;
     margin: 0;
 }
 
-.site-title a,
-.site-title a:visited {
-    color: #5a4a42;
+.site-title a {
+    color: #7a6257; /* Updated for consistency */
     text-decoration: none;
     transition: color 0.3s ease;
 }
-
+  
 .site-title a:hover {
-    color: #a9746e; /* hover accent */
+    color: #a9746e;
 }
 
 /* Navigation Styles */
@@ -62,23 +61,15 @@ nav ul {
     padding: 0;
 }
 
-nav ul li a,
-nav ul li a:visited {
+nav ul li a {
     text-decoration: none;
-    color: #6a4e42; /* Slightly deeper for clarity */
+    color: #5a4a42;
     font-weight: bold;
     transition: color 0.3s ease;
 }
-
+  
 nav ul li a:hover {
-    color: #a9746e; /* Soft rose brown */
-}
-
-nav a:visited,
-.site-title a:visited,
-p a:visited {
-  color: inherit !important;
-  text-decoration: none !important;
+    color: #a9746e;
 }
 
 /* Contact Form Styles */
@@ -95,7 +86,7 @@ form label {
     display: block;
     text-align: left;
     margin-bottom: 0.5rem;
-    color: #3e3e3e;
+    color: #7a6257; /* Updated label color */
     font-weight: bold;
 }
 
@@ -118,7 +109,6 @@ form textarea:focus {
     box-shadow: 0 0 4px #a9746e44;
 }
 
-/* Subtle hover color in focus and buttons */
 button[type="submit"] {
     background-color: #a9746e;
     color: white;
@@ -134,9 +124,8 @@ button[type="submit"]:hover {
     background-color: #8a5c54;
 }
 
-/* Emoji + contact link styles */
-p a,
-p a:visited {
+/* Emoji link styling */
+p a {
     text-decoration: none;
     color: #5a4a42;
     transition: color 0.3s ease;
@@ -146,11 +135,17 @@ p a:hover {
     color: #a9746e;
 }
 
+/* Prevent visited purple styling */
+a:visited {
+    color: #5a4a42;
+    text-decoration: none;
+}
+
 /* Footer */
 footer {
     text-align: center;
     padding: 1rem;
     background-color: #fef1e6;
-    color: #6a4e42;
+    color: #7a6257; /* Lighter footer color */
     margin-top: 2rem;
 }
