@@ -1,83 +1,57 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f4f4f4;
-    padding: 20px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-
-  /* General Styles */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-}
-
-/* Navigation Styles */
-header {
+  }
+  
+  /* Header */
+  header {
     background-color: #333;
-    color: #fff;
+    color: white;
     padding: 1rem;
-}
-
-nav ul {
+    text-align: center;
+  }
+  
+  /* Navigation Styles */
+  nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-}
-
-nav ul li {
+    flex-wrap: wrap;
+  }
+  
+  nav ul li {
     margin: 0 15px;
-}
-
-nav ul li a {
+  }
+  
+  nav ul li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
     transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
+  }
+  
+  nav ul li a:hover {
     color: #f39c12;
-}
-
-/* Main Content Styles */
-main {
-    text-align: center;
+  }
+  
+  /* Main Content */
+  main {
     padding: 2rem;
-}
-
-h1 {
-    color: #333;
-}
-
-/* Footer Style */
-footer {
+    text-align: center;
+  }
+  
+  /* Footer */
+  footer {
     text-align: center;
     padding: 1rem;
     background-color: #333;
     color: white;
     margin-top: 2rem;
-}
+  }
+  
