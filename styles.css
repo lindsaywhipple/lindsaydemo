@@ -24,6 +24,16 @@ body {
     font-size: 2rem;
     margin: 0;
   }
+
+  .site-title a {
+    color: #5a4a42; /* same as nav links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .site-title a:hover {
+    color: #a9746e; /* soft rose brown, same as hover for nav */
+  }
   
   /* Navigation Styles */
   nav ul {
