@@ -1,11 +1,11 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #fefaf6; /* Light cream */
-    color: #333;
+    color: #5a4a42;
   }
   
   /* Header */
@@ -35,7 +35,7 @@ header h1 {
 
   nav ul li a {
     text-decoration: none;
-    color: #6a4e42; /* Warm brown */
+    color: #5a4a42;
     font-weight: bold;
     transition: color 0.3s ease;
   }
@@ -50,8 +50,9 @@ header h1 {
     text-align: center;
   }
 
-  h1, h2 {
-    color: #3e3e3e;
+  h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    color: #4a3f35;
   }
 
   /* Contact Form Styles */
@@ -69,7 +70,7 @@ form {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
-    color: #333;
+    color: #5a4a42;
     text-align: left;
   }
   
@@ -83,6 +84,7 @@ form {
     font-size: 16px;
     font-family: inherit;
     box-sizing: border-box;
+    color: #5a4a42;
   }
   
   form input:focus,
