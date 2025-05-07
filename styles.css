@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fefaf6; /* Light cream */
-    color: #5a4a42;
+    color: #5a4a42; /* Same color for all text */
 }
 
 /* Ensuring consistency across all pages */
@@ -86,7 +86,7 @@ form label {
     display: block;
     text-align: left;
     margin-bottom: 0.5rem;
-    color: #3e3e3e;
+    color: #5a4a42; /* Same as body text */
     font-weight: bold;
 }
 
@@ -98,7 +98,7 @@ form textarea {
     border: 1px solid #e0d7ce;
     border-radius: 6px;
     background-color: #fefaf6;
-    color: #333;
+    color: #5a4a42; /* Same as body text */
     font-size: 16px;
 }
 
@@ -127,7 +127,7 @@ button[type="submit"]:hover {
 /* Emoji spacing and hover effect */
 p a {
     text-decoration: none;
-    color: #5a4a42;
+    color: #5a4a42; /* Matches body text */
     transition: color 0.3s ease;
 }
   
