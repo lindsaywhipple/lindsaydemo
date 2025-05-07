@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fefaf6; /* Light cream */
-    color: #5a4a42; /* Same color for all text */
+    color: #5a4a42;
 }
 
 /* Ensuring consistency across all pages */
@@ -37,19 +37,20 @@ header {
 
 .site-title {
     font-family: Georgia, serif;
-    color: #5a4a42; /* Matches nav links */
+    color: #5a4a42;
     font-size: 2rem;
     margin: 0;
 }
 
-.site-title a {
-    color: #5a4a42; /* same as nav links */
+.site-title a,
+.site-title a:visited {
+    color: #5a4a42;
     text-decoration: none;
     transition: color 0.3s ease;
 }
-  
+
 .site-title a:hover {
-    color: #a9746e; /* soft rose brown, same as hover for nav */
+    color: #a9746e; /* hover accent */
 }
 
 /* Navigation Styles */
@@ -61,13 +62,14 @@ nav ul {
     padding: 0;
 }
 
-nav ul li a {
+nav ul li a,
+nav ul li a:visited {
     text-decoration: none;
-    color: #5a4a42;
+    color: #6a4e42; /* Slightly deeper for clarity */
     font-weight: bold;
     transition: color 0.3s ease;
 }
-  
+
 nav ul li a:hover {
     color: #a9746e; /* Soft rose brown */
 }
@@ -86,7 +88,7 @@ form label {
     display: block;
     text-align: left;
     margin-bottom: 0.5rem;
-    color: #5a4a42; /* Same as body text */
+    color: #3e3e3e;
     font-weight: bold;
 }
 
@@ -98,7 +100,7 @@ form textarea {
     border: 1px solid #e0d7ce;
     border-radius: 6px;
     background-color: #fefaf6;
-    color: #5a4a42; /* Same as body text */
+    color: #333;
     font-size: 16px;
 }
 
@@ -109,6 +111,7 @@ form textarea:focus {
     box-shadow: 0 0 4px #a9746e44;
 }
 
+/* Subtle hover color in focus and buttons */
 button[type="submit"] {
     background-color: #a9746e;
     color: white;
@@ -124,13 +127,14 @@ button[type="submit"]:hover {
     background-color: #8a5c54;
 }
 
-/* Emoji spacing and hover effect */
-p a {
+/* Emoji + contact link styles */
+p a,
+p a:visited {
     text-decoration: none;
-    color: #5a4a42; /* Matches body text */
+    color: #5a4a42;
     transition: color 0.3s ease;
 }
-  
+
 p a:hover {
     color: #a9746e;
 }
