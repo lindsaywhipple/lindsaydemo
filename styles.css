@@ -176,6 +176,12 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
+.skills-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
 /* Contact Form Styles */
 form {
     max-width: 600px;
