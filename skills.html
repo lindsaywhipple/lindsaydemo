@@ -23,13 +23,52 @@
 
   <main>
     <h2>Skills</h2>
-    <p>
-    Here are my skills
-    </p>
-    <p>
-    SQL, R, Python
-    </p>
+    <div class="skills-toggle">
+      <button id="languagesBtn" class="active">Languages</button>
+      <button id="techniquesBtn">Techniques</button>
+    </div>
+  
+    <div id="languages" class="skills-section">
+      <ul class="skills-list">
+        <li>Python</li>
+        <li>R</li>
+        <li>SQL</li>
+        <li>Tableau</li>
+        <li>Power BI</li>
+        <li>Excel</li>
+      </ul>
+    </div>
+  
+    <div id="techniques" class="skills-section hidden">
+      <ul class="skills-list">
+        <li>A/B Testing</li>
+        <li>Data Cleaning</li>
+        <li>Visualization</li>
+        <li>Statistical Modeling</li>
+      </ul>
+    </div>
   </main>
+  
+  <script>
+    const languagesBtn = document.getElementById('languagesBtn');
+    const techniquesBtn = document.getElementById('techniquesBtn');
+    const languagesSection = document.getElementById('languages');
+    const techniquesSection = document.getElementById('techniques');
+  
+    languagesBtn.addEventListener('click', () => {
+      languagesSection.classList.remove('hidden');
+      techniquesSection.classList.add('hidden');
+      languagesBtn.classList.add('active');
+      techniquesBtn.classList.remove('active');
+    });
+  
+    techniquesBtn.addEventListener('click', () => {
+      techniquesSection.classList.remove('hidden');
+      languagesSection.classList.add('hidden');
+      techniquesBtn.classList.add('active');
+      languagesBtn.classList.remove('active');
+    });
+  </script>
 
   <footer>
     <p>&copy; 2025 Lindsay Whipple. All Rights Reserved.</p>
