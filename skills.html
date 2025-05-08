@@ -53,15 +53,15 @@
     const techniquesSection = document.getElementById('techniques');
   
     languagesBtn.addEventListener('click', () => {
-      languagesSection.classList.remove('hidden');
-      techniquesSection.classList.add('hidden');
+      languagesSection.classList.add('active');
+      techniquesSection.classList.remove('active');
       languagesBtn.classList.add('active');
       techniquesBtn.classList.remove('active');
     });
   
     techniquesBtn.addEventListener('click', () => {
-      techniquesSection.classList.remove('hidden');
-      languagesSection.classList.add('hidden');
+      techniquesSection.classList.add('active');
+      languagesSection.classList.remove('active');
       techniquesBtn.classList.add('active');
       languagesBtn.classList.remove('active');
     });

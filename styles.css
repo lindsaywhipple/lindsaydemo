@@ -103,10 +103,6 @@ nav ul li a:hover {
   .skills-list li:hover {
     background-color: #f3e5db;
   }
-  
-  .hidden {
-    display: none;
-  }
 
   /* Skills Toggle */
   .skills-toggle {
@@ -162,7 +158,7 @@ nav ul li a:hover {
     font-size: 1.5rem;
     color: #a9746e;
   }
-  
+
 /* Contact Form Styles */
 form {
     max-width: 600px;
