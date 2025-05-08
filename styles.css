@@ -139,14 +139,14 @@ nav ul li a:hover {
 .skills-category {
     display: none;
     margin-top: 30px;
-    flex-direction: wrap;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 15px;
-}
-
-.skills-category.active {
+  }
+  
+  .skills-category.active {
     display: flex;
-}
+  }
 
 .skill-item {
     background-color: #fffaf5;
