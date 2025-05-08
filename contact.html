@@ -1,73 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact - Lindsay Whipple</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
-  <header>
-    <h1 class="site-title"><a href="index.html">Lindsay Whipple</a></h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-pVf3E4ZG1/5i2R+jFd9R9Q8f+QwA9d8ZqBn5x+RgaKHEj1tZ5PZV5WhqGdOj0jP1HgLmk5v0QwJQEdZmU7QmZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="site-title"><a href="index.html">Lindsay Whipple</a></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <h1>Contact Me</h1>
-    <p>
-      <i class="fas fa-location-dot"></i>
-      Based in <strong>Boston, MA</strong>
-    </p>
-  
-    <p>
-      <i class="fas fa-envelope"></i>
-      <a href="mailto:lindsaymwhipple@gmail.com">lindsaymwhipple@gmail.com</a>
-    </p>
-  
-    <p>
-      <i class="fab fa-linkedin"></i>
-      <a href="https://www.linkedin.com/in/lindsay-whipple-425135160/" target="_blank">
-        linkedin.com/in/lindsay-whipple-425135160/
-      </a>
-    </p>
-  
-    <p>
-      <i class="fab fa-github"></i>
-      <a href="https://github.com/lindsaywhipple" target="_blank">
-        github.com/lindsaywhipple
-      </a>
-    </p>
+    <main>
+      <h2>Contact Me</h2>
 
-    <form action="https://formsubmit.co/lindsaymwhipple@gmail.com" method="POST">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="box">
-      <input type="hidden" name="_next" value="https://lindsaywhipple.github.io/lindsaydemo/thankyou.html">
-  
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
-  
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
-  
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-  
-      <button type="submit">Send</button>
-    </form>
-  </main>
+      <div class="contact-info">
+        <p><i class="fas fa-envelope" aria-label="Email"></i> <a href="mailto:lindsaywhipple@gmail.com" aria-label="Email me">lindsaywhipple@gmail.com</a></p>
+        <p><i class="fab fa-linkedin" aria-label="LinkedIn"></i> <a href="https://www.linkedin.com/in/lindsaywhipple/" target="_blank" aria-label="View LinkedIn Profile">LinkedIn</a></p>
+        <p><i class="fas fa-map-marker-alt" aria-label="Location"></i> South End, Boston, MA</p>
+        <p><i class="fab fa-github" aria-label="GitHub"></i> <a href="https://lindsaywhipple.github.io" target="_blank" aria-label="View GitHub Pages Portfolio">lindsaywhipple.github.io</a></p>
+      </div>
 
-  <footer>
-    <p>&copy; 2025 Lindsay Whipple. All Rights Reserved.</p>
-  </footer>
-</body>
+      <form action="https://formsubmit.co/lindsaywhipple@gmail.com" method="POST" autocomplete="on">
+        <input type="hidden" name="_next" value="thankyou.html" />
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required maxlength="100" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required maxlength="100" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required maxlength="500"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Lindsay Whipple</p>
+    </footer>
+  </body>
 </html>
