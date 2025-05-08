@@ -72,6 +72,105 @@ nav ul li a:hover {
     color: #a9746e;
 }
 
+/* About Section Styling */
+
+.about-container {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #fffaf5;
+    border: 1px solid #e0d7ce;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(106, 78, 66, 0.05);
+}
+
+.about-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #7a6257;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-text {
+    text-align: left;
+    color: #5a4a42;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.about-photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.about-photos img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(106, 78, 66, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-photos img:hover {
+    transform: scale(1.03);
+}
+
+.carousel {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    gap: 16px;
+    padding: 1rem 0;
+    border-radius: 10px;
+    max-width: 100%;
+    scrollbar-width: none; /* Firefox */
+}
+
+.carousel::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+.carousel-track {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+}
+
+.carousel-track figure {
+    scroll-snap-align: center;
+    text-align: center;
+    margin: 0;
+}
+
+.carousel-track img {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(106, 78, 66, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.carousel-track img:hover {
+    transform: scale(1.03);
+}
+
+.carousel-track figcaption {
+    margin-top: 8px;
+    font-size: 0.95rem;
+    color: #7a6257;
+    font-weight: bold;
+}
+
 /* Resume Section Styling */
 .resume-container {
     max-width: 800px;
