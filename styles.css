@@ -73,11 +73,19 @@ nav ul li a:hover {
 }
 
 /* Contact Info Styles */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
 .contact-info p {
     font-size: 1.1rem;
     margin: 1rem 0;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .contact-info a {
