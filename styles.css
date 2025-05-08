@@ -135,6 +135,14 @@ p a:hover {
     color: #a9746e;
 }
 
+/* Icon styles */
+p i {
+    margin-right: 8px;
+    color: #7a6257;
+    font-size: 1.1rem;
+    vertical-align: middle;
+}
+
 /* Prevent visited purple styling */
 a:visited {
     color: #5a4a42;
