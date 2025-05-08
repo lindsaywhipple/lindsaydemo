@@ -24,59 +24,45 @@
 
   <main>
     <h2>Skills</h2>
-  
+
     <div class="skills-toggle">
       <button id="languagesBtn" class="active">Languages</button>
       <button id="techniquesBtn">Techniques</button>
     </div>
-  
-    <!-- MOVE WRAPPER INSIDE the toggle div -->
+
     <div id="languages" class="skills-category active">
       <div class="skills-wrapper">
         <div class="skill-item"><i class="fab fa-python"></i> Python</div>
         <div class="skill-item"><i class="fas fa-database"></i> SQL</div>
         <div class="skill-item r-toggle"><i class="fab fa-r-project"></i> R</div>
-
-<div class="r-projects hidden">
-  <div class="r-project-card">
-    <a href="https://lindsaywhipple.shinyapps.io/PSA-Rankings/" target="_blank">
-      <img src="images/psa-shiny.jpg" alt="PSA R Shiny App" />
-      <div class="r-overlay">
-        <h4>PSA Shiny App</h4>
-        <p>Interactive dashboard built in R to analyze squash rankings.</p>
-      </div>
-    </a>
-  </div>
-
-  <div class="r-project-card">
-    <a href="https://rpubs.com/LindsayWhipple/1079783" target="_blank">
-      <img src="images/bellabeat.jpg" alt="Bellabeat Case Study" />
-      <div class="r-overlay">
-        <h4>Bellabeat Case Study</h4>
-        <p>Exploratory analysis of smart device data using R.</p>
-      </div>
-    </a>
-  </div>
-</div>
-
-        
-            <div class="r-project-card">
-              <a href="https://rpubs.com/LindsayWhipple/1079783" target="_blank">
-                <img src="images/bellabeat.jpg" alt="Bellabeat Case Study" />
-                <div class="r-overlay">
-                  <h4>Bellabeat Case Study</h4>
-                  <p>Exploratory analysis of smart device data using R.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
         <div class="skill-item"><i class="fas fa-chart-bar"></i> Tableau</div>
         <div class="skill-item"><i class="fas fa-chart-pie"></i> Power BI</div>
         <div class="skill-item"><i class="fas fa-file-excel"></i> Excel</div>
       </div>
+
+      <div class="r-projects hidden">
+        <div class="r-project-card">
+          <a href="https://lindsaywhipple.shinyapps.io/PSA-Rankings/" target="_blank">
+            <img src="images/psa-shiny.jpg" alt="PSA R Shiny App" />
+            <div class="r-overlay">
+              <h4>PSA Shiny App</h4>
+              <p>Interactive dashboard built in R to analyze squash rankings.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="r-project-card">
+          <a href="https://rpubs.com/LindsayWhipple/1079783" target="_blank">
+            <img src="images/bellabeat.jpg" alt="Bellabeat Case Study" />
+            <div class="r-overlay">
+              <h4>Bellabeat Case Study</h4>
+              <p>Exploratory analysis of smart device data using R.</p>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
-  
+
     <div id="techniques" class="skills-category">
       <div class="skills-wrapper">
         <div class="skill-item"><i class="fas fa-vial"></i> A/B Testing</div>
@@ -86,7 +72,7 @@
       </div>
     </div>
   </main>
-  
+
   <footer>
     <p>&copy; 2025 Lindsay Whipple. All Rights Reserved.</p>
   </footer>
@@ -110,6 +96,14 @@
 
     techniquesBtn.addEventListener('click', () => {
       switchTab(techniquesBtn, languagesBtn, techniquesSection, languagesSection);
+    });
+
+    const rToggle = document.querySelector('.r-toggle');
+    const rProjects = document.querySelector('.r-projects');
+
+    rToggle.addEventListener('click', () => {
+      rProjects.classList.toggle('hidden');
+      rToggle.classList.toggle('open');
     });
   </script>
 </body>
