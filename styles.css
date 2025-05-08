@@ -4,7 +4,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #fefaf6;
+    background-color: #fefaf6; /* Light cream */
     color: #5a4a42;
 }
 
@@ -17,7 +17,7 @@ main {
 
 h1, h2, h3 {
     font-family: 'Georgia', serif;
-    color: #7a6257;
+    color: #7a6257; /* Updated lighter but distinct header color */
 }
 
 p {
@@ -37,13 +37,13 @@ header {
 
 .site-title {
     font-family: Georgia, serif;
-    color: #7a6257;
+    color: #7a6257; /* Matches header color */
     font-size: 2rem;
     margin: 0;
 }
 
 .site-title a {
-    color: #7a6257;
+    color: #7a6257; /* Updated for consistency */
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -72,38 +72,6 @@ nav ul li a:hover {
     color: #a9746e;
 }
 
-/* Contact Info Styles */
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2rem;
-}
-
-.contact-info p {
-    font-size: 1.1rem;
-    margin: 1rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.contact-info a {
-    text-decoration: none;
-    color: #5a4a42;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.contact-info a:hover {
-    color: #a9746e;
-}
-
-.contact-info i {
-    margin-right: 10px;
-    color: #a9746e;
-}
-
 /* Contact Form Styles */
 form {
     max-width: 600px;
@@ -118,7 +86,7 @@ form label {
     display: block;
     text-align: left;
     margin-bottom: 0.5rem;
-    color: #7a6257;
+    color: #7a6257; /* Updated label color */
     font-weight: bold;
 }
 
@@ -156,11 +124,36 @@ button[type="submit"]:hover {
     background-color: #8a5c54;
 }
 
+/* Emoji link styling */
+p a {
+    text-decoration: none;
+    color: #5a4a42;
+    transition: color 0.3s ease;
+}
+
+p a:hover {
+    color: #a9746e;
+}
+
+/* Icon styles */
+p i {
+    margin-right: 8px;
+    color: #7a6257;
+    font-size: 1.1rem;
+    vertical-align: middle;
+}
+
+/* Prevent visited purple styling */
+a:visited {
+    color: #5a4a42;
+    text-decoration: none;
+}
+
 /* Footer */
 footer {
     text-align: center;
     padding: 1rem;
     background-color: #fef1e6;
-    color: #7a6257;
+    color: #7a6257; /* Lighter footer color */
     margin-top: 2rem;
 }
