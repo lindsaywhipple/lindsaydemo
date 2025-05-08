@@ -125,13 +125,13 @@ nav ul li a:hover {
 }
 
 .carousel {
+    width: 100%;
+    max-width: 100%;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     display: flex;
-    gap: 16px;
     padding: 1rem 0;
     border-radius: 10px;
-    max-width: 100%;
     scrollbar-width: none; /* Firefox */
 }
 
@@ -143,9 +143,11 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: nowrap;
     gap: 16px;
+    padding-left: 1rem;
 }
 
 .carousel-track figure {
+    min-width: 260px;
     scroll-snap-align: center;
     text-align: center;
     margin: 0;
