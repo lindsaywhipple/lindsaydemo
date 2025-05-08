@@ -28,7 +28,7 @@
       <button id="languagesBtn" class="active">Languages</button>
       <button id="techniquesBtn">Techniques</button>
     </div>
-  
+
     <div id="languages" class="skills-category active">
         <div class="skill-item"><i class="fab fa-python"></i> Python</div>
         <div class="skill-item"><i class="fas fa-database"></i> SQL</div>
@@ -36,39 +36,40 @@
         <div class="skill-item"><i class="fas fa-chart-bar"></i> Tableau</div>
         <div class="skill-item"><i class="fas fa-chart-pie"></i> Power BI</div>
         <div class="skill-item"><i class="fas fa-file-excel"></i> Excel</div>
-      </div>
-      
-      <div id="techniques" class="skills-category">
+    </div>
+  
+    <div id="techniques" class="skills-category">
         <div class="skill-item"><i class="fas fa-vial"></i> A/B Testing</div>
         <div class="skill-item"><i class="fas fa-broom"></i> Data Cleaning</div>
         <div class="skill-item"><i class="fas fa-chart-line"></i> Visualization</div>
         <div class="skill-item"><i class="fas fa-square-root-alt"></i> Statistical Modeling</div>
-      </div>
+    </div>
   </main>
   
+  <footer>
+    <p>&copy; 2025 Lindsay Whipple. All Rights Reserved.</p>
+  </footer>
+
   <script>
     const languagesBtn = document.getElementById('languagesBtn');
     const techniquesBtn = document.getElementById('techniquesBtn');
     const languagesSection = document.getElementById('languages');
     const techniquesSection = document.getElementById('techniques');
-  
+
+    function switchTab(activeTabBtn, inactiveTabBtn, activeSection, inactiveSection) {
+      activeTabBtn.classList.add('active');
+      inactiveTabBtn.classList.remove('active');
+      activeSection.classList.add('active');
+      inactiveSection.classList.remove('active');
+    }
+
     languagesBtn.addEventListener('click', () => {
-      languagesSection.classList.add('active');
-      techniquesSection.classList.remove('active');
-      languagesBtn.classList.add('active');
-      techniquesBtn.classList.remove('active');
+      switchTab(languagesBtn, techniquesBtn, languagesSection, techniquesSection);
     });
-  
+
     techniquesBtn.addEventListener('click', () => {
-      techniquesSection.classList.add('active');
-      languagesSection.classList.remove('active');
-      techniquesBtn.classList.add('active');
-      languagesBtn.classList.remove('active');
+      switchTab(techniquesBtn, languagesBtn, techniquesSection, languagesSection);
     });
   </script>
-
-  <footer>
-    <p>&copy; 2025 Lindsay Whipple. All Rights Reserved.</p>
-  </footer>
 </body>
 </html>
