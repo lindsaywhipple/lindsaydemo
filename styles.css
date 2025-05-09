@@ -72,6 +72,80 @@ nav ul li a:hover {
     color: #a9746e;
 }
 /* Home Section Styling */
+.home-intro {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    color: #5a4a42;
+  }
+  
+  .welcome-block {
+    margin-bottom: 3rem;
+  }
+  
+  .welcome-block h2 {
+    font-size: 2rem;
+    color: #7a6257;
+    margin-bottom: 1rem;
+  }
+  
+  .welcome-block p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto 1.2rem;
+  }
+  
+  .home-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .link-card {
+    background-color: #fffaf5;
+    border: 1px solid #e0d7ce;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(106, 78, 66, 0.08);
+    padding: 1.5rem;
+    max-width: 260px;
+    flex: 1 1 240px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .link-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .link-card h3 {
+    font-size: 1.3rem;
+    color: #7a6257;
+    margin-bottom: 0.6rem;
+  }
+  
+  .link-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .home-link-button {
+    display: inline-block;
+    background-color: #a9746e;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-link-button:hover {
+    background-color: #8a5c54;
+  }
+
 .home-container {
     max-width: 1000px;
     margin: 0 auto;
