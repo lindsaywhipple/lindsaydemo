@@ -102,18 +102,30 @@
   </footer>
 
   <script>
-    // Grab toggle buttons and sections
+    // Toggle buttons and sections
     const languagesBtn = document.getElementById('languagesBtn');
     const techniquesBtn = document.getElementById('techniquesBtn');
     const languagesSection = document.getElementById('languages');
     const techniquesSection = document.getElementById('techniques');
   
-    // Switch between "Languages" and "Techniques" sections
-    function switchTab(activeTabBtn, inactiveTabBtn, activeSection, inactiveSection) {
-      activeTabBtn.classList.add('active');
-      inactiveTabBtn.classList.remove('active');
-      activeSection.classList.add('active');
-      inactiveSection.classList.remove('active');
+    // Toggleable project sections
+    const pythonToggle = document.querySelector('.python-toggle');
+    const pythonProjects = document.querySelector('.python-projects');
+    const rToggle = document.querySelector('.r-toggle');
+    const rProjects = document.querySelectorAll('.r-projects')[1]; // 2nd one is for R
+  
+    // Handle tab switching
+    function switchTab(activeBtn, inactiveBtn, showSection, hideSection) {
+      activeBtn.classList.add('active');
+      inactiveBtn.classList.remove('active');
+      showSection.classList.add('active');
+      hideSection.classList.remove('active');
+  
+      // Hide Python and R projects when switching tabs
+      pythonProjects.classList.add('hidden');
+      rProjects.classList.add('hidden');
+      pythonToggle.classList.remove('open');
+      rToggle.classList.remove('open');
     }
   
     languagesBtn.addEventListener('click', () => {
@@ -124,25 +136,32 @@
       switchTab(techniquesBtn, languagesBtn, techniquesSection, languagesSection);
     });
   
-    // Toggle Python projects visibility
-    const pythonToggle = document.querySelector('.python-toggle');
-    const pythonProjects = document.querySelector('.python-projects');
-  
+    // Python toggle logic
     pythonToggle.addEventListener('click', () => {
+      const isHidden = pythonProjects.classList.contains('hidden');
       pythonProjects.classList.toggle('hidden');
       pythonToggle.classList.toggle('open');
+  
+      // Hide R if Python is opening
+      if (isHidden) {
+        rProjects.classList.add('hidden');
+        rToggle.classList.remove('open');
+      }
     });
   
-    // Toggle R projects visibility
-    const rToggle = document.querySelector('.r-toggle');
-    // There are two elements with .r-projects class, so use the second one for R
-    const rProjects = document.querySelectorAll('.r-projects')[1];
-  
+    // R toggle logic
     rToggle.addEventListener('click', () => {
+      const isHidden = rProjects.classList.contains('hidden');
       rProjects.classList.toggle('hidden');
       rToggle.classList.toggle('open');
+  
+      // Hide Python if R is opening
+      if (isHidden) {
+        pythonProjects.classList.add('hidden');
+        pythonToggle.classList.remove('open');
+      }
     });
   </script>
-  
+
 </body>
 </html>
