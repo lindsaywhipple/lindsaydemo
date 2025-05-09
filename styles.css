@@ -71,6 +71,81 @@ nav ul li a {
 nav ul li a:hover {
     color: #a9746e;
 }
+/* Home Section Styling */
+.home-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .intro-section {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .intro-section h2 {
+    font-size: 2.2rem;
+    color: #7a6257;
+    margin-bottom: 1rem;
+  }
+  
+  .intro-section p {
+    font-size: 1.15rem;
+    color: #5a4a42;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+  
+  .highlight-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+  
+  .highlight-card {
+    background-color: #fffaf5;
+    border: 1px solid #e0d7ce;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(106, 78, 66, 0.08);
+    padding: 1.5rem;
+    max-width: 300px;
+    text-align: center;
+    flex: 1 1 280px;
+    transition: transform 0.3s ease;
+  }
+  
+  .highlight-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .highlight-card h3 {
+    color: #7a6257;
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .highlight-card p {
+    font-size: 1rem;
+    color: #5a4a42;
+    margin-bottom: 1.2rem;
+  }
+  
+  .home-link-button {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #a9746e;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-link-button:hover {
+    background-color: #8a5c54;
+  }
 
 /* Projects Section Styling */
 .projects-title {
