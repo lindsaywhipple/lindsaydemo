@@ -33,6 +33,19 @@
     <div id="languages" class="skills-category active">
       <div class="skills-wrapper">
         <div class="skill-item python-toggle"><i class="fab fa-python"></i> Python</div>
+
+        <div class="python-projects">
+          <div class="r-project-card">
+            <a href="https://github.com/LindsayWhipple/python-scraper" target="_blank">
+              <img src="images/lift.jpg" alt="Lifting Tracker" />
+              <div class="r-overlay">
+                <h4>Lifting Tracker - 2025</h4>
+                <p>Created a program in Python that allows users to track their lifts.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
         <div class="skill-item"><i class="fas fa-database"></i> SQL</div>
         <div class="skill-item r-toggle"><i class="fab fa-r-project"></i> R</div>
         <div class="skill-item"><i class="fas fa-chart-bar"></i> Tableau</div>
@@ -71,18 +84,6 @@
           </a>
         </div>
 
-        <div class="python-projects">
-          <div class="r-project-card">
-            <a href="https://github.com/LindsayWhipple/python-scraper" target="_blank">
-              <img src="images/lift.jpg" alt="Lifting Tracker" />
-              <div class="r-overlay">
-                <h4>Lifting Tracker - 2025</h4>
-                <p>Created a program in Python that allows users to track their lifts.</p>
-              </div>
-            </a>
-          </div>
-        </div>
-
       </div>
     </div>
 
@@ -113,15 +114,6 @@
       pythonToggle.classList.toggle('open');
     });
 
-    const rToggle = document.querySelector('.r-toggle');
-    const rProjects = document.querySelector('.r-projects');
-
-    rToggle.addEventListener('click', () => {
-      rProjects.classList.toggle('hidden');
-      rToggle.classList.toggle('open');
-    });
-
-
     function switchTab(activeTabBtn, inactiveTabBtn, activeSection, inactiveSection) {
       activeTabBtn.classList.add('active');
       inactiveTabBtn.classList.remove('active');
@@ -135,6 +127,14 @@
 
     techniquesBtn.addEventListener('click', () => {
       switchTab(techniquesBtn, languagesBtn, techniquesSection, languagesSection);
+    });
+
+    const rToggle = document.querySelector('.r-toggle');
+    const rProjects = document.querySelector('.r-projects');
+
+    rToggle.addEventListener('click', () => {
+      rProjects.classList.toggle('hidden');
+      rToggle.classList.toggle('open');
     });
   </script>
 </body>
